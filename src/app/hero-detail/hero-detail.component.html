@@ -1,10 +1,20 @@
-<div *ngIf="hero">
+<div *ngIf="hero" class="enjoy-css">
   <h2>{{ hero.name | uppercase }} Details</h2>
-  <div><span>id: </span>{{hero.id}}</div>
-  <div>
+  <div  class="enjoy-css"> <h4><span>id: </span>{{hero.id}}</h4></div>
+  <div class="enjoy-css">
+
     <label>name:
       <input [(ngModel)]="hero.name" placeholder="name"/>
     </label>
+    <label> Role:
+    <input [(ngModel)]="hero.role" placeholder="role"/>
+  </label>
+  <label> Poistion:
+    <input [(ngModel)]="hero.position" placeholder="position"/>
+  </label>
+  <label> Damage Type:
+        <input [(ngModel)]="hero.damage_type" placeholder="damage_type"/>
+  </label>
   </div>
   <button (click)="goBack()">go back</button>
 </div>
