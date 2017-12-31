@@ -4,6 +4,5 @@ export class Hero {
   role: string;
   position: string;
   damage_type:string;
-  pic:string;
-  
+ x  
   }
